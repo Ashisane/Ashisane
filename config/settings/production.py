@@ -8,10 +8,11 @@ DATABASES = {
         default=os.getenv("DATABASE_URL"),
         conn_max_age=600,
         ssl_require=True,
-    )
+    ),
+    'ENGINE': 'django.db.backends.postgresql',
 }
 
-ALLOWED_HOSTS = ['your-production-domain.com', 'render.com']  # update this later
+ALLOWED_HOSTS = ['https://ashisane.onrender.com', 'render.com']
 
 # Security best practices for production
 SECURE_SSL_REDIRECT = True
