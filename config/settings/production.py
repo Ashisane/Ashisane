@@ -11,7 +11,8 @@ DATABASES = {
     )
 }
 
-ALLOWED_HOSTS = ['https://ashisane.onrender.com', 'render.com']
+ALLOWED_HOSTS = ['ashisane.onrender.com', 'render.com']
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Security best practices for production
 SECURE_SSL_REDIRECT = True
